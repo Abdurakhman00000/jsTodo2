@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    max-width: 1270px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+body {
+    background: rgba(255, 166, 0, 0.199);
+}
+
+
+#header {
+    background: white;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    /* background: white; */
+}
+
+
+.header-logo img {
+    width: 127px;
+    height: 100px;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 64px;
+
+}
+
+
+.nav-links a {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    font-size: 26px;
+
+}
+
+.nav1 {
+    transition: color 0.2ms;
+}
+
+.nav1:active {
+    color: red;
+}
+
+.nav2 {
+    transition: color 0.2ms;
+}
+
+.nav2:active {
+    color: red;
+}
+
+.nav3 {
+    transition: color 0.2ms;
+}
+
+.nav3:active:active {
+    color: red;
+}
+
+
+
+/* ADMIN BLOCK */
+
+
+
+
+.hero h1 {
+    color: rgba(0, 0, 0, 0.786);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.inputs input {
+    width: 400px;
+    height: 50px;
+    outline: none;
+    font-size: 20px;
+    padding-left: 20px;
+    /* border-radius: 5px; */
+}
+
+
+.btn {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background: orange;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+
+    transition: background-color 0, 2ms;
+}
+
+.btn:hover {
+    background-color: rgb(194, 127, 3);
+}
+
+/* ADMIN BLOCK */
+
+
+
+
+/* EDIT BLOCK */
+.modal_content {
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.832);
+    top: 0;
+    backdrop-filter: blur(4px);
+}
+
+.content {
+    background: rgba(255, 255, 255, 0.568);
+    width: 440px;
+    height: 340px;
+    padding-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.content input {
+    width: 400px;
+    height: 50px;
+    outline: none;
+    font-size: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    /* border-radius: 5px; */
+}
+
+.edit_btn {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background: orange;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+
+    transition: background-color 0, 2ms;
+}
+
+.edit_btn:hover {
+    background-color: rgb(194, 127, 3);
+}
+
+/* EDIT BLOCK */
+
+
+/* MENU BLOCK */
+
+
+#menu h1 {
+    color: rgba(0, 0, 0, 0.786);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
+
+.card {
+    background: white;
+    width: 350px;
+    height: 350px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.card_image {
+    margin: 10px 10px;
+    border-radius: 10px;
+    width: 330px;
+    height: 230px;
+}
+
+.text_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card_name {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+}
+
+.card_price {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+}
+
+.action_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.action_block button {
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+/* MENU BLOCK */
+
+
+
+
+
+/* ORDER block */
+
+#order h1 {
+    color: rgba(0, 0, 0, 0.786);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+.block {
+    background: white;
+    width: 800px;
+    height: 250px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    margin-left: 200px;
+    border-radius: 13px;
+}
+
+.block_img {
+    border-radius: 10px;
+    height: 230px;
+    width: 320px;
+    margin: 10px 13px;
+}
+
+.block_content {
+    margin-left: 370px;
+    margin-top: -200px;
+}
+
+.block_name {
+    font-size: 35px;
+    font-weight: 300;
+    margin-left: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.block_price {
+    font-size: 26px;
+    font-weight: 900;
+    color: green;
+    margin-top: 70px;
+}
+
+.block_operation {
+    display: flex;
+    gap: 4px;
+    margin-left: 560px;
+    margin-top: -30px;
+}
+
+.btn_minus {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: red;
+    border-radius: 14px;
+    font-size: 27px;
+    padding: 6px 6px;
+    cursor: pointer;
+
+    transition: background-color 0.2ms;
+}
+
+.btn_minus:active {
+    background-color: rgb(234, 125, 125);
+}
+
+.data_count {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    margin: 6px 8px;
+    padding-left: 8px;
+    width: 30px;
+    border: none;
+    outline: none;
+}
+
+.btn_plus {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: green;
+    border-radius: 14px;
+    font-size: 27px;
+    padding: 6px 6px;
+    cursor: pointer;
+
+    transition: background-color 0.2ms;
+}
+
+.btn_plus:active {
+    background-color: rgb(38, 197, 38);
+}
+
+.btn_buy {
+    height: 40px;
+    width: 70px;
+    margin-left: 20px;
+    background-color: orange;
+    cursor: pointer;
+    border: none;
+    border-radius: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+
+    transition: background-color 0.3ms;
+}
+
+.btn_buy:active {
+    background-color: rgb(231, 181, 87);
+}
+
+/* ORDER block */
